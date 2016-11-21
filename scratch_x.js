@@ -7,14 +7,7 @@
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
-
-    ext.get_temp = function(location, callback) {
-        // Make an AJAX call to the Open Weather Maps API
-        $.ajax({
-		callback(234);
-        });
-    };
-
+	
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
