@@ -1,29 +1,5 @@
 (function(ext) {
-    // Cleanup function when the extension is unloaded
-    
-    
-    var net = new WebTCP('localhost', 9999)
 
-    //Now you can create sockets like this
-    var socket = net.createSocket("127.0.0.1", 1337)
-
-    // To send data to socket 
-    socket.write("hi")
-
-    // On connection callback
-    socket.on('connect', function(){
-      console.log('connected');
-    })
-
-    // This gets called every time new data for this socket is received
-    socket.on('data', function(data) {
-      console.log("received: " + data);
-    });
-
-    socket.on('end', function(data) {
-      console.log("socket is closed ");
-    });
-    
     ext._shutdown = function() {};
 
     // Status reporting code
